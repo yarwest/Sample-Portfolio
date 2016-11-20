@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/portfolio', function(){
+    $portfolio_items = \App\PortfolioItem::get();
+    return view('portfolio')->with(compact('portfolio_items'));
+});

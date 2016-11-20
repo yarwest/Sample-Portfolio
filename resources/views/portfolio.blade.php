@@ -16,7 +16,18 @@
     <body>
         <div class="jumbotron">
             <div class="container">
-                <h1>Hello World</h1>
+                <h1>Portfolio</h1>
+                @foreach($portfolio_items as $item)
+                    <div class="panel panel-default">
+                        <div class="panel-heading">{{$item->title}}</div>
+                        <div class="panel-body">
+                            <img src="/img/{{$item->image}}.jpg" style="height:200px; width:200px; margin-left:calc(50% - 100px);">
+                        </div>
+                        <div class="panel-footer">
+                            <p>{{$item->description}}</p>
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </body>
