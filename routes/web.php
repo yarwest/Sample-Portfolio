@@ -19,3 +19,7 @@ Route::get('/portfolio', function(){
     $portfolio_items = \App\PortfolioItem::get();
     return view('portfolio')->with(compact('portfolio_items'));
 });
+
+Route::get('/contact', function(){
+    return view('contact');
+});
