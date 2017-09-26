@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
                     <h1>Products</h1>
-                    @foreach($portfolio_items as $item)
+                    @foreach($portfolioItems as $item)
                         <div class="panel panel-default">
                             <div class="panel-heading">{{$item->title}}</div>
                             <div class="panel-body" style="padding: 0;">

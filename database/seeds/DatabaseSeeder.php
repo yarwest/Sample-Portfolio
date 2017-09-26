@@ -27,7 +27,8 @@ class UserSeeder extends Seeder
     {
         \App\User::create([
             'name'=>'admin',
-            'password'=>Hash::make('admin01')
+            'password'=>Hash::make('admin01'),
+            'email'=>'yarnoboelens@gmail.com'
         ]);
     }
 
@@ -47,7 +48,7 @@ class PortfolioItemSeeder extends Seeder
             'description'=>'This cake is the dream of every chocolate lover',
             'image'=>'dark_fantasy'
         ]);
-        
+
         \App\PortfolioItem::create([
             'title'=>'Strawberry Paradise',
             'description'=>'This is a tropical coctail with strawberry as its main ingredient',
