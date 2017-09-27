@@ -3,18 +3,18 @@
   <h4 class="modal-title" id="newItemLabel">New Item</h4>
 </div>
 <div class="modal-body">
-
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
   <div class="form-group">
     <label for="name" class="control-label col-sm-4">Title</label>
     <div class="col-sm-8">
-        <input class="form-control" id="title" placeholder="Title" name="variety" type="text" required>
+        <input class="form-control" id="title" placeholder="Title" name="title" type="text" required>
     </div>
   </div>
   <div class="form-group">
     <label for="address" class="control-label col-sm-4">Description</label>
     <div class="col-sm-8">
-        <input class="form-control" id="description" placeholder="Description" name="variety" type="text" required>
+        <input class="form-control" id="description" placeholder="Description" name="description" type="text" required>
     </div>
   </div>
 
